@@ -6,7 +6,6 @@ import 'package:intl/intl.dart';
 import 'package:vazifa/blocs/blocs.dart';
 import 'package:vazifa/data/models/models.dart';
 
-
 class GroupInformationScreen extends StatefulWidget {
   final GroupModel groupModel;
   const GroupInformationScreen({super.key, required this.groupModel});

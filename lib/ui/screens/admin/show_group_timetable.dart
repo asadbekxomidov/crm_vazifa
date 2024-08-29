@@ -61,10 +61,16 @@ class _ShowGroupTimetableState extends State<ShowGroupTimetable> {
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Icon(Icons.error_outline, size: 60.sp, color: Colors.red),
+                  Icon(Icons.error_outline,
+                      size: 60.sp, color: Colors.blue.shade900),
                   SizedBox(height: 20.h),
                   Text("Bu Guruxga TimeTable qo'shilmagam!",
-                      style: TextStyle(fontSize: 16.h, color: Colors.red)),
+                      style: TextStyle(
+                          fontSize: 16.h, color: Colors.blue.shade800)),
+                  // Icon(Icons.error_outline, size: 60.sp, color: Colors.red),
+                  // SizedBox(height: 20.h),
+                  // Text("Bu Guruxga TimeTable qo'shilmagam!",
+                  //     style: TextStyle(fontSize: 16.h, color: Colors.red)),
                   // Text('Malumotlay typeda hatolik bor!',
                   //     style: TextStyle(fontSize: 16.h, color: Colors.red)),
                   // Text(state.error,
