@@ -10,6 +10,16 @@
 analyzer:
   errors:
     override_on_non_overriding_member: ignore
+    avoid_print: ignore
+    non_constant_identifier_names: ignore
+    prefer_const_constructors: ignore
+    avoid_function_literals_in_foreach_calls: ignore
+    unnecessary_string_interpolations: ignore
+    library_private_types_in_public_api: ignore
+    unnecessary_to_list_in_spreads: ignore
+    sized_box_for_whitespace: ignore
+    use_key_in_widget_constructors: ignore
+    no_leading_underscores_for_local_identifiers: ignore
 include: package:flutter_lints/flutter.yaml
 
 linter:

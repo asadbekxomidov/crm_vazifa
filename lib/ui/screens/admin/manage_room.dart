@@ -7,7 +7,7 @@ import 'package:vazifa/ui/screens/admin/room_screen.dart';
 
 class ManageRoom extends StatefulWidget {
   final RoomModel? roomModel;
-  ManageRoom({super.key, required this.roomModel});
+  const ManageRoom({super.key, required this.roomModel});
 
   @override
   State<ManageRoom> createState() => _ManageRoomState();

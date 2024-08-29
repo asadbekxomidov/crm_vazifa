@@ -52,7 +52,7 @@ class SubjectServices {
       } else {
         print('Error fetching subjects: $e');
       }
-      throw e;
+      throw e.toString();
     }
   }
 

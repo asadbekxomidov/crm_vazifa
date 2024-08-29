@@ -48,7 +48,7 @@ class GroupService {
       return response.data;
     } catch (e) {
       print('Error adding group: $e');
-      throw e;
+      throw e.toString();
     }
   }
 
@@ -64,7 +64,7 @@ class GroupService {
       return response.data;
     } catch (e) {
       print('Error adding group: $e');
-      throw e;
+      throw e.toString();
     }
   }
 
@@ -99,7 +99,7 @@ class GroupService {
       return response.data;
     } catch (e) {
       print('Error adding group: $e');
-      throw e;
+      throw e.toString();
     }
   }
 

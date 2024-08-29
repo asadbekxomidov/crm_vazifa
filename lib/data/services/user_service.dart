@@ -19,7 +19,6 @@ class UserService {
       if (response.data['success'] == false) {
         throw response.data;
       }
-      ;
 
       print(
           '----------------Get User-----------------------------------${response.data.toString()}-----------------------------------------');
@@ -51,27 +50,6 @@ class UserService {
       rethrow;
     }
   }
-
-  // Future<Map<String, dynamic>> getUsers() async {
-  //   try {
-  //     final response = await dio.get(
-  //       'http://millima.flutterwithakmaljon.uz/api/users',
-  //     );
-
-  //     if (response.data['success'] == false) {
-  //       throw response.data;
-  //     }
-
-  //     return response.data;
-  //   } on DioException catch (error) {
-  //     print(error.response!.data);
-  //     throw error.response!.data.toString();
-
-  //     // throw error.message.toString();
-  //   } catch (e) {
-  //     rethrow;
-  //   }
-  // }
 
   Future<void> updateProfile({
     required String name,

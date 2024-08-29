@@ -473,11 +473,11 @@ class SignInScreen extends StatelessWidget {
                                     'Sign In',
                                     style: TextStyle(
                                       color: Colors.white,
-                                      fontSize: 16,
+                                      fontSize: 16.h,
                                       fontWeight: FontWeight.bold,
                                     ),
                                   ),
-                                  SizedBox(width: 10),
+                                  SizedBox(width: 10.w),
                                   AnimatedSwitcher(
                                     duration: const Duration(milliseconds: 300),
                                     child: Icon(

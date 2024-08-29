@@ -60,7 +60,7 @@ class RoomService {
       return error.response!.data;
     } catch (e) {
       print('Error getting rooms: $e');
-      throw e;
+      throw e.toString();
     }
   }
 
@@ -92,7 +92,7 @@ class RoomService {
       return error.response!.data;
     } catch (e) {
       print('Error getting room: $e');
-      throw e;
+      throw e.toString();
     }
   }
 

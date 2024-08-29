@@ -64,7 +64,7 @@ class TimetableService {
       return error.response!.data;
     } catch (e) {
       print('Error getting rooms: $e');
-      throw e;
+      throw e.toString();
     }
   }
 }
