@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:vazifa/blocs/users_bloc/users_bloc.dart';
-import 'package:vazifa/blocs/users_bloc/users_event.dart';
-import 'package:vazifa/blocs/users_bloc/users_state.dart';
-import 'package:vazifa/data/models/user_model.dart';
+import 'package:vazifa/data/models/models.dart';
 
 Future<UserModel?> chooseTeacher(BuildContext context) {
   BlocProvider.of<UsersBloc>(context).add(GetUsersEvent());

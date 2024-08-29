@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:vazifa/blocs/room_bloc.dart/room_bloc.dart';
-import 'package:vazifa/blocs/room_bloc.dart/room_event.dart';
-import 'package:vazifa/data/models/room_model.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:vazifa/blocs/blocs.dart';
+import 'package:vazifa/data/models/models.dart';
 import 'package:vazifa/ui/screens/admin/room_screen.dart';
 
 class ManageRoom extends StatefulWidget {
@@ -36,65 +36,130 @@ class _ManageRoomState extends State<ManageRoom> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        iconTheme: IconThemeData(color: Colors.white, size: 26.h),
         centerTitle: true,
+        backgroundColor: Colors.blue.shade800,
+        elevation: 0,
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.vertical(
+            bottom: Radius.circular(20),
+          ),
+        ),
         title: Text(
           widget.roomModel == null ? "Add Room" : "Edit Room",
-          style: TextStyle(fontSize: 30, fontWeight: FontWeight.w600),
+          style: TextStyle(
+              fontSize: 24.h, fontWeight: FontWeight.w600, color: Colors.white),
         ),
       ),
-      body: Padding(
-        padding: const EdgeInsets.all(20.0),
-        child: Column(
-          children: [
-            SizedBox(height: 15),
-            TextField(
-              controller: nameEditingController,
-              decoration: InputDecoration(
-                  labelText: "Name",
-                  border: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(25))),
+      body: SingleChildScrollView(
+        child: Container(
+          decoration: BoxDecoration(
+            gradient: LinearGradient(
+              begin: Alignment.topCenter,
+              end: Alignment.bottomCenter,
+              colors: [Colors.blue.shade100, Colors.white],
             ),
-            SizedBox(height: 15),
-            TextField(
-              controller: descriptionEditingController,
-              decoration: InputDecoration(
-                  labelText: "Description",
-                  border: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(25))),
-            ),
-            SizedBox(height: 15),
-            TextField(
-              controller: capacityEditingController,
-              keyboardType: TextInputType.number,
-              decoration: InputDecoration(
-                  labelText: "capacity",
-                  border: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(25))),
-            ),
-            SizedBox(height: 15),
-            ElevatedButton(
-                onPressed: () {
-                  context.read<RoomBloc>().add(AddRoomEvent(
-                      name: nameEditingController.text,
-                      description: descriptionEditingController.text,
-                      capacity: int.parse(capacityEditingController.text)));
-                  Navigator.pushReplacement(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) => RoomScreen(),
-                      ));
-                },
-                style: ElevatedButton.styleFrom(
-                    backgroundColor: Colors.blue,
-                    padding: EdgeInsets.fromLTRB(30, 10, 30, 10)),
-                child: Text(
-                  "Add Room",
-                  style: TextStyle(
-                      fontSize: 25,
+          ),
+          child: Padding(
+            padding: const EdgeInsets.all(20.0),
+            child: Column(
+              children: [
+                SizedBox(height: 15),
+                TextField(
+                  controller: nameEditingController,
+                  decoration: InputDecoration(
+                    labelText: "Name",
+                    labelStyle: TextStyle(color: Colors.blue.shade800),
+                    border: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(10),
+                      borderSide: BorderSide(color: Colors.blue.shade800),
+                    ),
+                    focusedBorder: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(10),
+                      borderSide:
+                          BorderSide(color: Colors.blue.shade800, width: 2),
+                    ),
+                    enabledBorder: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(10),
+                      borderSide: BorderSide(color: Colors.blue.shade800),
+                    ),
+                  ),
+                ),
+                SizedBox(height: 15),
+                TextField(
+                  controller: descriptionEditingController,
+                  decoration: InputDecoration(
+                    labelText: "Description",
+                    labelStyle: TextStyle(color: Colors.blue.shade800),
+                    border: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(10),
+                      borderSide: BorderSide(color: Colors.blue.shade800),
+                    ),
+                    focusedBorder: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(10),
+                      borderSide:
+                          BorderSide(color: Colors.blue.shade800, width: 2),
+                    ),
+                    enabledBorder: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(10),
+                      borderSide: BorderSide(color: Colors.blue.shade800),
+                    ),
+                  ),
+                ),
+                SizedBox(height: 15),
+                TextField(
+                  controller: capacityEditingController,
+                  keyboardType: TextInputType.number,
+                  decoration: InputDecoration(
+                    labelText: "Capacity",
+                    labelStyle: TextStyle(color: Colors.blue.shade800),
+                    border: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(10),
+                      borderSide: BorderSide(color: Colors.blue.shade800),
+                    ),
+                    focusedBorder: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(10),
+                      borderSide:
+                          BorderSide(color: Colors.blue.shade800, width: 2),
+                    ),
+                    enabledBorder: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(10),
+                      borderSide: BorderSide(color: Colors.blue.shade800),
+                    ),
+                  ),
+                ),
+                SizedBox(height: 380.h),
+                ElevatedButton(
+                  onPressed: () {
+                    context.read<RoomBloc>().add(AddRoomEvent(
+                        name: nameEditingController.text,
+                        description: descriptionEditingController.text,
+                        capacity: int.parse(capacityEditingController.text)));
+                    Navigator.pushReplacement(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => RoomScreen(),
+                        ));
+                  },
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: Colors.blue.shade800,
+                    padding: EdgeInsets.symmetric(horizontal: 30, vertical: 15),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(10),
+                    ),
+                  ),
+                  child: Text(
+                    "Add Room",
+                    style: TextStyle(
+                      fontSize: 20.h,
                       fontWeight: FontWeight.w600,
-                      color: Colors.white),
-                ))
-          ],
+                      color: Colors.white,
+                    ),
+                  ),
+                )
+              ],
+            ),
+          ),
         ),
       ),
     );

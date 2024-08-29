@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:vazifa/blocs/subject_bloc/subject_bloc.dart';
-import 'package:vazifa/blocs/subject_bloc/subject_state.dart';
-import 'package:vazifa/data/models/subject_model.dart';
+import 'package:vazifa/blocs/blocs.dart';
+import 'package:vazifa/data/models/models.dart';
 
 class SubjectDialog extends StatelessWidget {
   final Function(SubjectModel) onSubjectSelected;

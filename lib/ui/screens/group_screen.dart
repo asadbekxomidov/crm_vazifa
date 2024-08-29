@@ -2,9 +2,7 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:vazifa/blocs/group_bloc/group_bloc.dart';
-import 'package:vazifa/blocs/group_bloc/group_event.dart';
-import 'package:vazifa/blocs/group_bloc/group_state.dart';
+import 'package:vazifa/blocs/blocs.dart';
 import 'package:vazifa/ui/screens/admin/ui/widget/custom_drawer_for_admin.dart';
 import 'package:vazifa/ui/widget/group_item_for_admin.dart';
 

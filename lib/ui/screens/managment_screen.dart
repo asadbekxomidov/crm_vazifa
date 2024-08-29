@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:vazifa/blocs/current_user_bloc/current_user_bloc.dart';
-import 'package:vazifa/blocs/current_user_bloc/current_user_event.dart';
-import 'package:vazifa/blocs/current_user_bloc/current_user_state.dart';
 import 'package:vazifa/ui/screens/admin/ui/admin_screen.dart';
 import 'package:vazifa/ui/screens/teacher/ui/screens/teacher_screeen.dart';
 import 'package:vazifa/ui/screens/student/ui/screens/user_screen.dart';

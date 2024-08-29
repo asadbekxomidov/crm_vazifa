@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:vazifa/blocs/subject_bloc/subject_bloc.dart';
-import 'package:vazifa/blocs/subject_bloc/subject_event.dart';
-import 'package:vazifa/blocs/subject_bloc/subject_state.dart';
+import 'package:vazifa/blocs/blocs.dart';
 import 'package:vazifa/ui/screens/admin/ui/widget/custom_drawer_for_admin.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 

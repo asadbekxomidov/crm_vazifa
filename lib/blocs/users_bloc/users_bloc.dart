@@ -1,8 +1,10 @@
+import 'dart:io';
+import 'package:equatable/equatable.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:vazifa/blocs/users_bloc/users_event.dart';
-import 'package:vazifa/blocs/users_bloc/users_state.dart';
-import 'package:vazifa/data/models/user_model.dart';
-import 'package:vazifa/data/services/user_service.dart';
+import 'package:vazifa/data/models/models.dart';
+import 'package:vazifa/data/services/services.dart';
+part 'users_event.dart';
+part 'users_state.dart';
 
 class UsersBloc extends Bloc<UsersEvent, UsersState> {
   UsersBloc() : super(UsersInitialState()) {

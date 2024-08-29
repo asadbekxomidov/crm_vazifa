@@ -1,8 +1,9 @@
+import 'package:equatable/equatable.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:vazifa/blocs/room_bloc.dart/room_event.dart';
-import 'package:vazifa/blocs/room_bloc.dart/room_state.dart';
-import 'package:vazifa/data/models/room_model.dart';
-import 'package:vazifa/data/services/room_service.dart';
+import 'package:vazifa/data/models/models.dart';
+import 'package:vazifa/data/services/services.dart';
+part 'room_event.dart';
+part 'room_state.dart';
 
 class RoomBloc extends Bloc<RoomEvent, RoomState> {
   RoomBloc() : super(RoomInitialState()) {

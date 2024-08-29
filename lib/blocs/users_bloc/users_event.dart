@@ -1,6 +1,5 @@
-import 'dart:io';
+part of 'users_bloc.dart';
 
-import 'package:equatable/equatable.dart';
 
 sealed class UsersEvent extends Equatable {
   @override

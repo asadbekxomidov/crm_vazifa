@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:vazifa/blocs/room_bloc.dart/room_bloc.dart';
-import 'package:vazifa/blocs/room_bloc.dart/room_event.dart';
-import 'package:vazifa/data/models/room_model.dart';
+import 'package:vazifa/blocs/blocs.dart';
+import 'package:vazifa/data/models/models.dart';
 import 'package:vazifa/ui/screens/admin/manage_room.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 

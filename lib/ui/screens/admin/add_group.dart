@@ -1,14 +1,12 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:vazifa/blocs/group_bloc/group_bloc.dart';
-import 'package:vazifa/blocs/group_bloc/group_event.dart';
-import 'package:vazifa/data/models/user_model.dart';
-import 'package:vazifa/data/models/subject_model.dart';
-import 'package:vazifa/ui/screens/admin/ui/admin_screen.dart';
-import 'package:vazifa/ui/widget/choose_teacher.dart';
-import 'package:vazifa/ui/screens/admin/ui/widget/custom_drawer_for_admin.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:vazifa/blocs/blocs.dart';
+import 'package:vazifa/data/models/models.dart';
+import 'package:vazifa/ui/screens/admin/ui/admin_screen.dart';
+import 'package:vazifa/ui/screens/admin/ui/widget/custom_drawer_for_admin.dart';
+import 'package:vazifa/ui/widget/choose_teacher.dart';
 import 'package:vazifa/ui/widget/subject/choose_subject.dart';
 
 class AddGroup extends StatefulWidget {

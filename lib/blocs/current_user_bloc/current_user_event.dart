@@ -1,6 +1,4 @@
-import 'dart:io';
-
-import 'package:equatable/equatable.dart';
+part of 'current_user_bloc.dart';
 
 sealed class CurrentUserEvent extends Equatable {
   @override

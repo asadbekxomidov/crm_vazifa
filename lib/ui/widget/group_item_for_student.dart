@@ -1,96 +1,3 @@
-// import 'package:flutter/material.dart';
-// import 'package:vazifa/data/models/group_model.dart';
-// import 'package:vazifa/ui/screens/group_information_screen.dart';
-// import 'package:flutter_screenutil/flutter_screenutil.dart';
-
-// class GroupItemForStudent extends StatelessWidget {
-//   final GroupModel groupModel;
-//   const GroupItemForStudent({super.key, required this.groupModel});
-
-//   @override
-//   Widget build(BuildContext context) {
-//     return Column(
-//       children: [
-//         InkWell(
-//           onTap: () {
-//             Navigator.push(
-//                 context,
-//                 MaterialPageRoute(
-//                   builder: (context) => GroupInformationScreen(
-//                     groupModel: groupModel,
-//                   ),
-//                 ));
-//           },
-//           child: Container(
-//             width: double.infinity,
-//             decoration: BoxDecoration(
-//                 borderRadius: BorderRadius.circular(10.r),
-//                 color: Colors.blue.shade900),
-//             padding: EdgeInsets.all(10),
-//             child: Column(
-//               crossAxisAlignment: CrossAxisAlignment.start,
-//               children: [
-//                 Row(
-//                   children: [
-//                     Icon(Icons.group, size: 26.h, color: Colors.white),
-//                     SizedBox(width: 5.w),
-//                     Text(
-//                       "Group Name: ${groupModel.name}",
-//                       style: TextStyle(
-//                           overflow: TextOverflow.ellipsis,
-//                           fontSize: 22,
-//                           fontWeight: FontWeight.w400,
-//                           color: Colors.white),
-//                     ),
-//                   ],
-//                 ),
-//                 SizedBox(height: 5.h),
-//                 Container(
-//                   height: 1.h,
-//                   width: double.infinity,
-//                   color: Colors.grey.shade400,
-//                 ),
-//                 SizedBox(height: 5.h),
-//                 Row(
-//                   children: [
-//                     Icon(Icons.person, size: 26.h, color: Colors.white),
-//                     SizedBox(width: 5.w),
-//                     SizedBox(width: 5.w),
-//                     Text(
-//                       "Main Teacher Id: ${groupModel.main_teacher.id}",
-//                       style: TextStyle(
-//                           overflow: TextOverflow.ellipsis,
-//                           fontSize: 16.h,
-//                           fontWeight: FontWeight.w500,
-//                           color: Colors.white),
-//                     ),
-//                   ],
-//                 ),
-//                 Row(
-//                   children: [
-//                     Icon(Icons.person_2_outlined,
-//                         size: 26.h, color: Colors.white),
-//                     SizedBox(width: 5.w),
-//                     Text(
-//                       "Asistant Teacher id: ${groupModel.assistant_teacher.id}",
-//                       style: TextStyle(
-//                           overflow: TextOverflow.ellipsis,
-//                           fontSize: 15.h,
-//                           fontWeight: FontWeight.w500,
-//                           color: Colors.white),
-//                     ),
-//                   ],
-//                 )
-//               ],
-//             ),
-//           ),
-//         ),
-//         SizedBox(height: 15),
-//       ],
-//     );
-//   }
-// }
-
 import 'package:flutter/material.dart';
 import 'package:vazifa/data/models/group_model.dart';
 import 'package:vazifa/ui/screens/group_information_screen.dart';
@@ -105,7 +12,7 @@ class GroupItemForStudent extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.symmetric(vertical: 6.h, horizontal: 8.w),
+      padding: EdgeInsets.symmetric(vertical: 4.h, horizontal: 4.w),
       child: Card(
         elevation: 5,
         shape: RoundedRectangleBorder(

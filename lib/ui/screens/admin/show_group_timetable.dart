@@ -1,11 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:vazifa/blocs/timetable_bloc/timetable_bloc.dart';
-import 'package:vazifa/blocs/timetable_bloc/timetable_event.dart';
-import 'package:vazifa/blocs/timetable_bloc/timetable_state.dart';
-import 'package:vazifa/data/models/group_model.dart';
-import 'package:vazifa/data/models/week_days.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:vazifa/blocs/blocs.dart';
+import 'package:vazifa/data/models/models.dart';
 
 class ShowGroupTimetable extends StatefulWidget {
   final GroupModel groupModel;
@@ -30,7 +27,7 @@ class _ShowGroupTimetableState extends State<ShowGroupTimetable> {
       appBar: AppBar(
         backgroundColor: Colors.blue.shade800,
         leading: IconButton(
-          icon: Icon(Icons.arrow_back, color: Colors.white),
+          icon: Icon(Icons.arrow_back, color: Colors.white, size: 26.h),
           onPressed: () => Navigator.of(context).pop(),
         ),
         title: Text(
@@ -66,8 +63,10 @@ class _ShowGroupTimetableState extends State<ShowGroupTimetable> {
                 children: [
                   Icon(Icons.error_outline, size: 60.sp, color: Colors.red),
                   SizedBox(height: 20.h),
-                  Text('Malumotlay typeda hatolik bor!',
+                  Text("Bu Guruxga TimeTable qo'shilmagam!",
                       style: TextStyle(fontSize: 16.h, color: Colors.red)),
+                  // Text('Malumotlay typeda hatolik bor!',
+                  //     style: TextStyle(fontSize: 16.h, color: Colors.red)),
                   // Text(state.error,
                   //     style: TextStyle(fontSize: 18.sp, color: Colors.red)),
                 ],

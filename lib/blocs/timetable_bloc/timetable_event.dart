@@ -1,4 +1,4 @@
-import 'package:equatable/equatable.dart';
+part of 'timetable_bloc.dart';
 
 sealed class TimeTableEvent extends Equatable {
   @override

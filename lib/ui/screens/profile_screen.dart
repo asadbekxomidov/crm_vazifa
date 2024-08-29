@@ -2,10 +2,8 @@ import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:image_picker/image_picker.dart';
-import 'package:vazifa/blocs/current_user_bloc/current_user_bloc.dart';
-import 'package:vazifa/blocs/current_user_bloc/current_user_event.dart';
-import 'package:vazifa/blocs/current_user_bloc/current_user_state.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:vazifa/blocs/blocs.dart';
 import 'package:vazifa/ui/screens/admin/ui/widget/custom_drawer_for_admin.dart';
 import 'package:vazifa/ui/screens/student/ui/widgets/student_drawer.dart';
 import 'package:vazifa/ui/screens/teacher/ui/widgets/teacher_drawer.dart';
@@ -219,11 +217,11 @@ class _UserProfileScreenState extends State<ProfileScreen> {
   Widget _buildDrawer() {
     switch (widget.role) {
       case 1:
-        return StudentDrawer(); // Replace with the actual drawer widget for students
+        return StudentDrawer();
       case 2:
-        return TeacherDrawer(); // Replace with the actual drawer widget for teachers
+        return TeacherDrawer();
       case 3:
-        return CustomDrawerForAdmin(); // Replace with the actual drawer widget for admins
+        return CustomDrawerForAdmin();
       default:
         return Drawer(
           child: Center(

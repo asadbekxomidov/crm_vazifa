@@ -4,9 +4,8 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_facebook_auth/flutter_facebook_auth.dart';
 import 'package:google_sign_in/google_sign_in.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:vazifa/data/models/social_login_model.dart';
-import 'package:vazifa/data/services/authentification_service.dart';
-
+import 'package:vazifa/data/models/models.dart';
+import 'package:vazifa/data/services/services.dart';
 part 'auth_event.dart';
 part 'auth_state.dart';
 

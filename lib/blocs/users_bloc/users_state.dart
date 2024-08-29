@@ -1,5 +1,4 @@
-import 'package:equatable/equatable.dart';
-import 'package:vazifa/data/models/user_model.dart';
+part of 'users_bloc.dart';
 
 sealed class UsersState extends Equatable {
   @override

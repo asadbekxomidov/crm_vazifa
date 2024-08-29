@@ -1,4 +1,4 @@
-import 'package:equatable/equatable.dart';
+part of 'room_bloc.dart';
 
 sealed class RoomEvent extends Equatable {
   @override

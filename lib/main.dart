@@ -1,18 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:vazifa/blocs/auth_bloc/auth_bloc.dart';
-import 'package:vazifa/blocs/group_bloc/group_bloc.dart';
-import 'package:vazifa/blocs/current_user_bloc/current_user_bloc.dart';
-import 'package:vazifa/blocs/room_bloc.dart/room_bloc.dart';
-import 'package:vazifa/blocs/timetable_bloc/timetable_bloc.dart';
-import 'package:vazifa/blocs/users_bloc/users_bloc.dart';
-import 'package:vazifa/blocs/subject_bloc/subject_bloc.dart';
-import 'package:vazifa/data/services/subject_services.dart';
-import 'package:vazifa/ui/screens/managment_screen.dart';
 import 'package:vazifa/ui/screens/auth/login_screen.dart';
 import 'package:vazifa/ui/screens/auth/register_admin_for_teacher.dart';
 import 'package:vazifa/ui/screens/auth/register_screen.dart';
+import 'package:vazifa/ui/screens/managment_screen.dart';
+import 'data/services/services.dart';
+import 'blocs/blocs.dart';
 
 void main() {
   runApp(MyApp());

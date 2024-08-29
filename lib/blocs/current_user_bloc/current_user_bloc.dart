@@ -1,8 +1,10 @@
+import 'dart:io';
+import 'package:equatable/equatable.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:vazifa/blocs/current_user_bloc/current_user_event.dart';
-import 'package:vazifa/blocs/current_user_bloc/current_user_state.dart';
-import 'package:vazifa/data/models/user_model.dart';
-import 'package:vazifa/data/services/user_service.dart';
+import 'package:vazifa/data/models/models.dart';
+import 'package:vazifa/data/services/services.dart';
+part 'current_user_event.dart';
+part 'current_user_state.dart';
 
 class CurrentUserBloc extends Bloc<CurrentUserEvent, CurrentUserState> {
   CurrentUserBloc() : super(CurrentUserInitialState()) {

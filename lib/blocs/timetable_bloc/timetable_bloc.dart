@@ -1,8 +1,9 @@
+import 'package:equatable/equatable.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:vazifa/blocs/timetable_bloc/timetable_event.dart';
-import 'package:vazifa/blocs/timetable_bloc/timetable_state.dart';
-import 'package:vazifa/data/models/timetable.dart';
-import 'package:vazifa/data/services/timetable_service.dart';
+import 'package:vazifa/data/models/models.dart';
+import 'package:vazifa/data/services/services.dart';
+part 'timetable_event.dart';
+part 'timetable_state.dart';
 
 class TimetableBloc extends Bloc<TimeTableEvent, TimeTableState> {
   TimetableBloc() : super(TimeTableInitialState()) {

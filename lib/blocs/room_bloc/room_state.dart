@@ -1,5 +1,4 @@
-import 'package:equatable/equatable.dart';
-import 'package:vazifa/data/models/room_model.dart';
+part of 'room_bloc.dart';
 
 sealed class RoomState extends Equatable {
   @override

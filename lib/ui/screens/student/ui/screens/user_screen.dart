@@ -1,10 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:vazifa/blocs/auth_bloc/auth_bloc.dart';
-import 'package:vazifa/blocs/group_bloc/group_bloc.dart';
-import 'package:vazifa/blocs/group_bloc/group_event.dart';
-import 'package:vazifa/blocs/group_bloc/group_state.dart';
+import 'package:vazifa/blocs/blocs.dart';
 import 'package:vazifa/ui/screens/student/ui/widgets/student_drawer.dart';
 import 'package:vazifa/ui/widget/group_item_for_student.dart';
 
@@ -80,13 +77,21 @@ class _UserScreenState extends State<UserScreen> {
         if (state is GroupErrorState) {
           return Center(
             child: Text(
-              state.error,
+              'Malumotlar yuklanmoqda',
               style: TextStyle(
                 fontSize: 16.sp,
                 fontWeight: FontWeight.w500,
-                color: Colors.red,
+                color: Colors.blue,
               ),
             ),
+            // child: Text(
+            //   state.error,
+            //   style: TextStyle(
+            //     fontSize: 16.sp,
+            //     fontWeight: FontWeight.w500,
+            //     color: Colors.red,
+            //   ),
+            // ),
           );
         }
         if (state is GroupLoadedState) {

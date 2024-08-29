@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:vazifa/blocs/auth_bloc/auth_bloc.dart';
+import 'package:vazifa/blocs/blocs.dart';
 import 'package:vazifa/ui/screens/auth/login_screen.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 

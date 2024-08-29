@@ -1,12 +1,11 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:intl/intl.dart';
-import 'package:vazifa/blocs/users_bloc/users_bloc.dart';
-import 'package:vazifa/blocs/users_bloc/users_event.dart';
-import 'package:vazifa/data/models/group_model.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:vazifa/data/models/user_model.dart';
+import 'package:intl/intl.dart';
+import 'package:vazifa/blocs/blocs.dart';
+import 'package:vazifa/data/models/models.dart';
+
 
 class GroupInformationScreen extends StatefulWidget {
   final GroupModel groupModel;

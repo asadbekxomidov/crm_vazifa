@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:vazifa/blocs/users_bloc/users_bloc.dart';
-import 'package:vazifa/blocs/users_bloc/users_event.dart';
-import 'package:vazifa/blocs/users_bloc/users_state.dart';
-import 'package:vazifa/data/models/user_model.dart';
+import 'package:vazifa/blocs/blocs.dart';
+import 'package:vazifa/data/models/models.dart';
 
 Future<List?> updateStudents(BuildContext context, List selectedUserIds) {
   context.read<UsersBloc>().add(GetUsersEvent());
@@ -44,8 +42,8 @@ Future<List?> updateStudents(BuildContext context, List selectedUserIds) {
                           user.name,
                           style: TextStyle(fontSize: 20),
                         ),
-                        subtitle: Text(user.phone ??
-                            'Telefon raqami mavjud emas'), // Provide a fallback value
+                        subtitle:
+                            Text(user.phone ?? 'Telefon raqami mavjud emas'),
                         leading: Container(
                           decoration: BoxDecoration(
                             shape: BoxShape.circle,

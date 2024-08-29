@@ -1,5 +1,4 @@
-import 'package:equatable/equatable.dart';
-import 'package:vazifa/data/models/subject_model.dart';
+part of 'subject_bloc.dart';
 
 abstract class SubjectState extends Equatable {
   @override

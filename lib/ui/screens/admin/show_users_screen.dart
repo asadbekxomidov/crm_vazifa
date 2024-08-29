@@ -1,12 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:vazifa/blocs/users_bloc/users_bloc.dart';
-import 'package:vazifa/blocs/users_bloc/users_event.dart';
-import 'package:vazifa/blocs/users_bloc/users_state.dart';
-import 'package:vazifa/data/models/user_model.dart';
-import 'package:vazifa/ui/screens/details_screen.dart';
-import 'package:vazifa/ui/screens/admin/ui/widget/custom_drawer_for_admin.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:vazifa/data/models/models.dart';
+import 'package:vazifa/ui/screens/admin/ui/widget/custom_drawer_for_admin.dart';
+import 'package:vazifa/ui/screens/details_screen.dart';
 
 class ShowUsersScreen extends StatefulWidget {
   final int role;

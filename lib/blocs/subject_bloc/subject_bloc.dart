@@ -1,8 +1,9 @@
+import 'package:equatable/equatable.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:vazifa/data/services/subject_services.dart';
-import 'package:vazifa/blocs/subject_bloc/subject_event.dart';
-import 'package:vazifa/blocs/subject_bloc/subject_state.dart';
-import 'package:vazifa/data/models/subject_model.dart';
+import 'package:vazifa/data/models/models.dart';
+import 'package:vazifa/data/services/services.dart';
+part 'subject_event.dart';
+part 'subject_state.dart';
 
 class SubjectBloc extends Bloc<SubjectEvent, SubjectState> {
   final SubjectServices _subjectServices;

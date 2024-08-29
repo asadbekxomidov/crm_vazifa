@@ -1,8 +1,9 @@
+import 'package:equatable/equatable.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:vazifa/blocs/group_bloc/group_event.dart';
-import 'package:vazifa/blocs/group_bloc/group_state.dart';
-import 'package:vazifa/data/models/group_model.dart';
-import 'package:vazifa/data/services/group_service.dart';
+import 'package:vazifa/data/models/models.dart';
+import 'package:vazifa/data/services/services.dart';
+part 'group_event.dart';
+part 'group_state.dart';
 
 class GroupBloc extends Bloc<GroupEvent, GroupState> {
   GroupBloc() : super(GroupInitialState()) {

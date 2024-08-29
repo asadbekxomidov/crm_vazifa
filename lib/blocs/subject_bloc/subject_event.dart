@@ -1,4 +1,4 @@
-import 'package:equatable/equatable.dart';
+part of 'subject_bloc.dart';
 
 abstract class SubjectEvent extends Equatable {
   @override

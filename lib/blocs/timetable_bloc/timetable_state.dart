@@ -1,5 +1,5 @@
-import 'package:equatable/equatable.dart';
-import 'package:vazifa/data/models/timetable.dart';
+part of 'timetable_bloc.dart';
+
 
 sealed class TimeTableState extends Equatable {
   @override

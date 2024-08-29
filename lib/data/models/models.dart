@@ -1,0 +1,9 @@
+export 'authentification_response.dart';
+export 'group_model.dart';
+export 'role_model.dart';
+export 'room_model.dart';
+export 'social_login_model.dart';
+export 'timetable.dart';
+export 'user_model.dart';
+export 'week_days.dart';
+export 'subject_model.dart';
