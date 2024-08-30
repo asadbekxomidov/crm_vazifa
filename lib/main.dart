@@ -73,7 +73,7 @@ admin {
 
 student {
   name: asadbek,
-  phone: 998333333333,
+  phone: +998333333333,
   password: student2006S,
 }
 

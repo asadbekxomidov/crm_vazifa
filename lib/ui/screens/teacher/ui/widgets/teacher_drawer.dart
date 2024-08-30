@@ -65,7 +65,7 @@ class TeacherDrawer extends StatelessWidget {
               context,
               icon: CupertinoIcons.person_crop_circle,
               title: "Profile",
-              onTap: () => Navigator.push(
+              onTap: () => Navigator.pushReplacement(
                 context,
                 MaterialPageRoute(
                     builder: (ctx) => ProfileScreen(

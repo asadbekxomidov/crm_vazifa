@@ -79,7 +79,7 @@ class _UserScreenState extends State<UserScreen> {
             child: Text(
               'Malumotlar yuklanmoqda',
               style: TextStyle(
-                fontSize: 16.sp,
+                fontSize: 18.h,
                 fontWeight: FontWeight.w500,
                 color: Colors.blue,
               ),

@@ -100,7 +100,7 @@ class CustomDrawerForAdmin extends StatelessWidget {
         ),
         trailing: Icon(Icons.keyboard_arrow_right, color: Colors.white),
         onTap: () {
-          Navigator.push(
+          Navigator.pushReplacement(
             context,
             MaterialPageRoute(
               builder: (ctx) {
