@@ -3,6 +3,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:vazifa/blocs/blocs.dart';
 import 'package:vazifa/ui/screens/admin/ui/widget/custom_drawer_for_admin.dart';
+// import 'package:vazifa/ui/widget/group_item_for_admin.dart';
 
 class AdminScreen extends StatefulWidget {
   const AdminScreen({super.key});
@@ -73,102 +74,103 @@ class _AdminScreenState extends State<AdminScreen> {
               ),
             );
           }
-          // if (state is GroupLoadedState) {
-          //   return _buildGroupList(state);
-          // }
+          if (state is GroupLoadedState) {
+            return _buildDashboard();
+            // return _buildGroupList(state);
+          }
           return Text('');
         },
       ),
     );
   }
 
-  // Widget _buildDashboard() {
-  //   return SingleChildScrollView(
-  //     padding: EdgeInsets.all(20.r),
-  //     child: Column(
-  //       crossAxisAlignment: CrossAxisAlignment.start,
-  //       children: [
-  //         Text(
-  //           "Welcome, Admin!",
-  //           style: TextStyle(
-  //             fontSize: 28.sp,
-  //             fontWeight: FontWeight.bold,
-  //             color: Colors.blue.shade800,
-  //           ),
-  //         ),
-  //         SizedBox(height: 20.h),
-  //         _buildDashboardCard(
-  //           "Total Groups",
-  //           "15", // You can replace this with actual data
-  //           Icons.group,
-  //         ),
-  //         SizedBox(height: 15.h),
-  //         _buildDashboardCard(
-  //           "Total Students",
-  //           "150", // You can replace this with actual data
-  //           Icons.school,
-  //         ),
-  //         SizedBox(height: 15.h),
-  //         _buildDashboardCard(
-  //           "Total Teachers",
-  //           "20", // You can replace this with actual data
-  //           Icons.person,
-  //         ),
-  //       ],
-  //     ),
-  //   );
-  // }
+  Widget _buildDashboard() {
+    return SingleChildScrollView(
+      padding: EdgeInsets.all(20.r),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Text(
+            "Welcome, Admin!",
+            style: TextStyle(
+              fontSize: 28.sp,
+              fontWeight: FontWeight.bold,
+              color: Colors.blue.shade800,
+            ),
+          ),
+          SizedBox(height: 20.h),
+          _buildDashboardCard(
+            "Total Groups",
+            "15", // You can replace this with actual data
+            Icons.group,
+          ),
+          SizedBox(height: 15.h),
+          _buildDashboardCard(
+            "Total Students",
+            "150", // You can replace this with actual data
+            Icons.school,
+          ),
+          SizedBox(height: 15.h),
+          _buildDashboardCard(
+            "Total Teachers",
+            "20", // You can replace this with actual data
+            Icons.person,
+          ),
+        ],
+      ),
+    );
+  }
 
-  // Widget _buildDashboardCard(String title, String count, IconData icon) {
-  //   return Container(
-  //     padding: EdgeInsets.all(20.r),
-  //     decoration: BoxDecoration(
-  //       color: Colors.white,
-  //       borderRadius: BorderRadius.circular(15.r),
-  //       boxShadow: [
-  //         BoxShadow(
-  //           color: Colors.blue.shade100.withOpacity(0.5),
-  //           blurRadius: 10,
-  //           offset: Offset(0, 5),
-  //         ),
-  //       ],
-  //     ),
-  //     child: Row(
-  //       children: [
-  //         Container(
-  //           padding: EdgeInsets.all(12.r),
-  //           decoration: BoxDecoration(
-  //             color: Colors.blue.shade100,
-  //             shape: BoxShape.circle,
-  //           ),
-  //           child: Icon(icon, size: 30.r, color: Colors.blue.shade800),
-  //         ),
-  //         SizedBox(width: 20.w),
-  //         Column(
-  //           crossAxisAlignment: CrossAxisAlignment.start,
-  //           children: [
-  //             Text(
-  //               title,
-  //               style: TextStyle(
-  //                 fontSize: 18.sp,
-  //                 fontWeight: FontWeight.bold,
-  //                 color: Colors.blue.shade800,
-  //               ),
-  //             ),
-  //             Text(
-  //               count,
-  //               style: TextStyle(
-  //                 fontSize: 24.sp,
-  //                 fontWeight: FontWeight.bold,
-  //                 color: Colors.blue.shade900,
-  //               ),
-  //             ),
-  //           ],
-  //         ),
-  //       ],
-  //     ),
-  //   );
-  // }
+  Widget _buildDashboardCard(String title, String count, IconData icon) {
+    return Container(
+      padding: EdgeInsets.all(20.r),
+      decoration: BoxDecoration(
+        color: Colors.white,
+        borderRadius: BorderRadius.circular(15.r),
+        boxShadow: [
+          BoxShadow(
+            color: Colors.blue.shade100.withOpacity(0.5),
+            blurRadius: 10,
+            offset: Offset(0, 5),
+          ),
+        ],
+      ),
+      child: Row(
+        children: [
+          Container(
+            padding: EdgeInsets.all(12.r),
+            decoration: BoxDecoration(
+              color: Colors.blue.shade100,
+              shape: BoxShape.circle,
+            ),
+            child: Icon(icon, size: 30.r, color: Colors.blue.shade800),
+          ),
+          SizedBox(width: 20.w),
+          Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text(
+                title,
+                style: TextStyle(
+                  fontSize: 18.sp,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.blue.shade800,
+                ),
+              ),
+              Text(
+                count,
+                style: TextStyle(
+                  fontSize: 24.sp,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.blue.shade900,
+                ),
+              ),
+            ],
+          ),
+        ],
+      ),
+    );
+  }
 
   // Widget _buildGroupList(GroupLoadedState state) {
   //   return ListView.builder(

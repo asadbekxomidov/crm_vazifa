@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:vazifa/blocs/current_user_bloc/current_user_bloc.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:vazifa/ui/screens/admin/ui/admin_screen.dart';
 import 'package:vazifa/ui/screens/teacher/ui/screens/teacher_screeen.dart';
 import 'package:vazifa/ui/screens/student/ui/screens/user_screen.dart';
@@ -44,7 +45,11 @@ class _ManagmentScreenState extends State<ManagmentScreen> {
           }
         }
         return Center(
-          child: Text("User topilmadi!"),
+          child: Text(
+            "Malumotlar yuklanmoqda!",
+            style: TextStyle(fontSize: 20.h, color: Colors.blue.shade800),
+          ),
+          // child: Text("User topilmadi!"),
         );
       }),
     );

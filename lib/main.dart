@@ -9,7 +9,7 @@ import 'data/services/services.dart';
 import 'blocs/blocs.dart';
 
 void main() {
-  runApp(MyApp());
+    runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -63,7 +63,6 @@ class MyApp extends StatelessWidget {
   }
 }
 
-
 /*
 
 admin {
@@ -78,7 +77,7 @@ student {
   password: student2006S,
 }
 
-teacher { 
+teacher {
   name: asadbek,
   phone: 998920060909,
   password: teacher2006T,
