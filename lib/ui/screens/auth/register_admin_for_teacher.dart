@@ -83,6 +83,7 @@ class _SignUpScreenState extends State<SignupForTeacher> {
                   ),
                   const SizedBox(height: 15),
                   TextField(
+                    keyboardType: TextInputType.number,
                     controller: _phoneController,
                     decoration: InputDecoration(
                       labelText: 'Phone Number',
