@@ -75,7 +75,7 @@ class _AdminScreenState extends State<AdminScreen> {
             );
           }
           if (state is GroupLoadedState) {
-            return _buildDashboard();
+            // return _buildDashboard();
             // return _buildGroupList(state);
           }
           return Text('');

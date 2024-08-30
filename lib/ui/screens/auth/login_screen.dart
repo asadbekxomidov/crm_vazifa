@@ -102,7 +102,6 @@ class SignInScreen extends StatelessWidget {
                 child: Column(
                   children: [
                     TextField(
-                      keyboardType: TextInputType.number,
                       controller: _phoneController,
                       decoration: InputDecoration(
                         labelText: 'Phone Number',

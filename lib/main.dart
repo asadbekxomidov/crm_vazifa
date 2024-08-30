@@ -67,7 +67,7 @@ class MyApp extends StatelessWidget {
 
 admin {
   name: asadbek_xomidov,
-  phone: 998908579552,
+  phone: +998908579552,
   password: admin2006A,
 }
 
